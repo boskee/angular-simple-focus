@@ -4,9 +4,6 @@ angular.module('simple-focus', [])
   .directive('simpleFocus', function ($timeout) {
     return {
       restrict: 'A',
-      scope: {
-      	simpleFocus: '='
-      },
       link: function(scope, element) {
         scope.$watch('simpleFocus', function() {
           $timeout(function() {
